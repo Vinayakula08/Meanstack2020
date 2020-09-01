@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:antiquewhite;">
+    <form align="center">
+        <h4 align="center" style="color: orangered;">Personal Details</h4>
+        <br>
+        Name:<input type="text" name="name">
+        <br><br>
+        Password: <input type="pswd" name="password">
+        <br><br>
+        E-mail ID:<input type="text" name="E-mail id">
+        <br><br>
+        Gender: <input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">Female
+        <br><br>
+        Contact#: <input type="text" name="Number">
+        <br><br>
+        <h4 style="color: orangered;" >Educational Qualifications</h5>
+        Degree: <select>
+            <option value="Deg">--Select Group--</option>
+            <option value="Deg">B.tech</option>
+            <option value="Deg">B.Sc</option>
+            <option value="Deg">B.Com</option>
+            <option value="Deg">Mass Comm.</option>
+        </select>
+        <br><br>
+        Engineering: <select>
+            <option value="Grp">--Select Group--</option>
+            <option value="Grp">CSE</option>
+            <option value="Grp">IT</option>
+            <option value="Grp">ECE</option>
+            <option value="Grp">EIE</option>
+        </select>
+        <br><br>
+        Hobbies: <input type="checkbox"> Playing Chess
+        
+        <input type="checkbox"> Reading Books
+        <br><br>
+        <h4 style="color: orangered;" >Address</h4>
+        <textarea rows="5" cols="40"></textarea>
+        <br><br>
+        Attach Resume: <input type="file" name="resume">
+        <br><br>
+        <input type="submit" name="submit" style="background-color:orangered;">
+    </form>
+</body>
+</html>
