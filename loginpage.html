@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login page</title>
+        <style>
+            form {
+                margin-left: 40%;
+                margin-right: 50%;
+                margin-top: 15%;
+                width: 70%;
+            }
+            .form-container{
+                width: 250px;
+                height: 250px;
+                background-color:#ebeeed;
+                align-self: center;
+                border-style:solid;
+                border-radius: 6px;
+                border-width: 1.7px;
+                border-color:#2d2e2ea1;
+                color: #808181;
+                font-family:sans-serif;
+                box-shadow: 10px 10px 8px #888888;
+                           
+            }
+        
+            .input-place-holder{
+                align-self: center;
+                width: 180px;
+                border-style:solid;
+                border-width: 1.7px;
+                border-color: rgba(136, 136, 136, 0.911);
+                border-radius: 6px;
+                padding:8px;
+                margin: 10px 0px 0px 20px;
+                font-size: 15px;
+            }
+            #sign-in-btn{
+                background-color:crimson;
+                color: white;
+                width: 195px;
+                height: 30px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: rgba(247, 243, 243, 0.726);
+                font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin: 0px 0px 0px 20px;
+            }
+            .heading-form{
+                text-align: center;
+                align-self: center;
+                color: #909292;
+                padding:5px;
+                margin: 0px;
+            }
+            a{
+                text-decoration: none;
+                color: #909292;
+            }
+            ::placeholder{
+                color:#beb6b4ea ;
+                margin-left: 25px;
+                font-family: sans-serif;
+                font-size: 12px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <form class="form-container">
+                <h3 class="heading-form">Login</h3>
+                <hr style="color:#909292">
+                <label></label>
+               <strong><input class="input-place-holder" type="text" name="username" placeholder="    Username"></strong> 
+                <br><br>
+                <label></label>
+                <input class="input-place-holder" type="password" name="password" placeholder="    Password"><br>
+                <small  style="margin: 0px 0px 0px 150px; font-size: 12px;"><sup><a href="#">forgot password?</a></sup></small>
+                <br><br>
+                <button id="sign-in-btn" type="submit" method="post">SIGN IN</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
