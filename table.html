@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SONET</title>
+    <script type="text/javascript" src="app.js"></script>
+    <style>
+        body{
+            background-color: rgba(173, 212, 247, 0.4);
+
+
+        }
+        h1,h2{
+            color: rgb(0, 133, 0);
+        }
+
+
+
+    </style>
+</head>
+<body onload="load()">
+  <center>  <form>
+<div id="myform">
+<h1><b>Enter the details:</b></h1>
+<table>
+    <tr>
+        <td>Student Name:</td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>Age:</td>
+        <td><input type="text" id="age">
+        
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td><input type="text" id="gender">
+        
+    </tr>
+    <tr>
+        <td>Branch:</td>
+        <td><input type="text" id="branch">
+        
+    </tr>
+    <tr>
+        <td>Section:</td>
+        <td><input type="text" id="section">
+        
+    </tr>
+    <tr>
+        <td>Marks:</td>
+        <td><input type="text" id="marks">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" id="add" value="Submit" onclick="Javascript:addRow()">
+            <input type="reset" id="reset" value="Reset" onClick="myform.reset()">
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="mydata">
+<h2><b>Data you entered is..</b></h2>
+<table id="myTableData"  border="1" cellpadding="2">
+    <tr>
+        <td>&nbsp;</td>
+        <td><b>Student Name</b></td>
+        <td><b>Age</b></td>
+        <td><b>Gender</b></td>
+        <td><b>Branch</b></td>
+        <td><b>Section</b></td>
+        <td><b>Marks</b></td>
+    </tr>
+</table>
+&nbsp;
+ 
+</div>
+
+<script src="table.js"></script>
+</form>
+</center>
+</body>
+</html>
