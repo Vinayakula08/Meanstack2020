@@ -25,4 +25,4 @@ search.addEventListener('submit', (e) => {
 
 
     
-})
+}) 
