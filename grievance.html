@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.logo-title {
+    margin-top: 0%;
+    flex: 3;
+    -ms-grid-row-align: center;
+    align-self: center;
+    text-transform: uppercase;
+    padding: 0 12px;
+}
+.logo-title h4 {
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    -ms-grid-row-align: center;
+    align-self: center;
+    color: #14777f;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.logo-title h6 {
+    color: #666;
+    line-height: 8px;
+    text-align: center;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.orange-clr {
+    color: #f17f08 !important;
+}
+
+.blue-clr {
+    color: #14777f !important;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+.subcaption {
+    text-transform: none;
+    font-size: 15px !important;
+}
+.logo {
+    display: flex;
+    justify-content: left;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">student</a>
+  <a href="#">parent</a>
+  <a href="#">faculty</a>
+  <a href="#">Contact</a>
+  <a href="#">AICTE</a>
+</div>
+
+
+<div id="main">
+    <div class="container">
+ <div> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+  
+  
+  <div class="logo">
+      <a href="kmit.in"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Keshav_Memorial_Institute_of_Technology_Logo.jpg"></a>
+  </div>
+  <div  class="logo-title">
+    <h4 style="display: block;font-size:22px;">
+    keshav memorial institute of technology</h4>
+    <div class="w-100"></div>
+    <h6  class="orange-clr">An Autonomous Institution<span  class="blue-clr bold"> - Accredited by NAAC with 'A' Grade</span></h6>
+    <h6  class="subcaption">( Powered by <b class="orange-clr">GENESIS</b>  )</h6>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html> 
